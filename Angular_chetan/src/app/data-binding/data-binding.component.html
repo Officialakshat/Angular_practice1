@@ -1,0 +1,47 @@
+<!-- interpolation -->
+<div align="center" style="border-bottom: 1px solid black;">
+  <h1>1.Interpolation</h1>
+  <h2> Example :  <b>{{myName}}</b></h2>
+  <h4> Data Flow :  Component to view</h4>
+</div>
+
+
+<!-- property binding -->
+<div align="center" style="border-bottom: 1px solid black;">
+  <h1> 2.Property Binding</h1>
+  <h2> Example 1: <img [src]="myImage" alt="Image of {{myName}}"></h2>
+    <h2> Example 2: <input [value]="myName"></h2>
+
+  <h4>Data Flow :  Component to view</h4>
+</div>
+
+<!-- event binding -->
+
+<div align="center" style="border-bottom: 1px solid black;">
+  <h1>3.Event Binding</h1>
+  <h2> Example: <button (click)="onSave()">save</button></h2>
+  <h2>
+    <select name="Country" (change)="onChange()" >
+        <option value="India">India</option>
+        <option value="Canada">Canada</option>
+        <option value="USA">USA</option>
+        <option value="Australia">Australia</option>
+    </select>
+  </h2>
+  <h4>Data Flow :  View to Component</h4>
+</div>
+
+<!-- Two way data binding  -->
+<div align="center" style="border-bottom: 1px solid black;">
+  <h1>4.Two Way Data Binding</h1>
+  <h2> Example: <input type="text" [(ngModel)]="myName"> </h2>
+  <h4>Data Flow :  Component to View and View to Component Both</h4>
+</div>
+ 
+<!-- practice questions -->
+
+<button [disabled]="isDisabled" >Btn</button>
+
+<button (click)="count = count + 1">Click Me</button>
+<h2>Count: {{count}}</h2>
+
