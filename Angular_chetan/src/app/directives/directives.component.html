@@ -11,12 +11,28 @@
 
 <div class=" m-20">
     <div >
-        <h2 class="text-white">Directive Example 2</h2>
-        <input type="text" value="search" class="bg-gray-200 border-2 p-2 rounded">
+        <h2 class="text-white ">Directive Example 2</h2>
+        <input *ngIf="inputField" type="text" value="search" class="bg-gray-200 my-10 border-2 p-2 rounded">
     </div>
 
      <div>
-        <button>Hide</button>
-        <button>Show</button>
+        
+        <button (click)="toShow()"  class="h-12 w-20 p-2 bg-blue-500">Show</button>
+        <button (click)="toHide()" class="h-12 w-20 p-2 mx-10 bg-red-500">Hide</button>
+    </div>
+
+</div>
+
+
+<div>
+    <div class="flex-col flex w-52 mx-40">
+       <input type="text" value=" " [(ngModel)]="input1" class="bg-gray-200 my-10 border-2 p-2 rounded">
+       <input type="text" value=" " [(ngModel)]="input2" class="bg-gray-200 my-10 border-2 p-2 rounded">
+    </div>
+
+    <div class=" mx-50 my-5">
+     <p *ngIf="input1 !== input2">inputs are not equal</p>
+
+     <p *ngIf="input1 === input2">Inputs are equal</p>
     </div>
 </div>

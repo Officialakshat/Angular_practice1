@@ -1,9 +1,10 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-directives',
-  imports: [NgIf],
+  imports: [NgIf, FormsModule],
   templateUrl: './directives.component.html',
   styleUrl: './directives.component.css'
 })
@@ -17,14 +18,20 @@ toChange(){
 }
 
 // example 2
-isHide = false;
+inputField: boolean = true;
 
+toShow(){
+  this.inputField = true;
+}
 
 toHide(){
-  this.isHide === true;
+  this.inputField = false;
 }
 
 
+// example 3
 
+input1: string = '';
+input2: string = '';
 
 }
