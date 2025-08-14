@@ -1,0 +1,208 @@
+<Div>
+    <div class="h-auto w-full bg-slate-200 py-10">
+        <select name="Employees" class="bg-slate-200" >
+            <option value="">Name & emails</option>
+            <option *ngFor=" let emp of employees"  value="">
+
+                {{emp.empName}} - {{emp.empEmail}}
+            </option>
+        </select>
+    </div>
+</Div>
+
+<!-- using @for -->
+
+<Div>
+    <div class="h-auto w-full bg-slate-200 py-10">
+        <select name="Employees" class="bg-slate-200" >
+            <option value="">Name & emails</option>
+            <!-- <option *ngFor=" let emp of employees"  value="">
+
+                {{emp.empName}} - {{emp.empEmail}}
+            </option> -->
+
+            @for(emp of employees ; track emp;){
+              <option>
+
+                {{emp.empName}} - {{emp.empEmail}}
+            </option>
+            }
+        </select>
+    </div>
+</Div>
+
+
+<!-- using *ngFor -->
+
+<div class="flex justify-center py-5 bg-slate-100">
+    <table  class="border  border-black border-collapse text-center">
+    <thead class="bg-red-500 text-white">
+        <tr>
+            <th class="border">
+               Emp. Name
+            </th>
+             <th class="border">
+                Emp. Number
+            </th>
+             <th class="border">
+                Emp. Email
+            </th>
+             <th class="border">
+                Emp. Depatment
+            </th>
+        </tr>
+    </thead>
+        <tbody class="bg-green-500 text-white" >
+        <tr  *ngFor="let emp of employees">
+           <td class="border">
+             {{emp.empName}}
+            
+           </td>
+            <td class="border">
+            {{emp.empNumber}}
+           </td>
+          <td class="border" >
+             {{emp.empEmail}}
+           </td>
+               <td class="border">
+             {{emp.empDept}}
+           </td>
+
+
+        </tr>
+    </tbody>
+    </table>
+</div>
+
+<!-- using @for -->
+
+<div class="flex justify-center py-5 bg-slate-100">
+    <table  class="border  border-black border-collapse text-center">
+    <thead class="bg-red-500 text-white">
+        <tr>
+            <th class="border">
+               Emp. Name
+            </th>
+             <th class="border">
+                Emp. Number
+            </th>
+             <th class="border">
+                Emp. Email
+            </th>
+             <th class="border">
+                Emp. Depatment
+            </th>
+        </tr>
+    </thead>
+        <tbody class="bg-green-500 text-white" >
+        <!-- <tr  *ngFor="let emp of employees">
+           <td class="border">
+             {{emp.empName}}
+            
+           </td>
+            <td class="border">
+            {{emp.empNumber}}
+           </td>
+          <td class="border" >
+             {{emp.empEmail}}
+           </td>
+               <td class="border">
+             {{emp.empDept}}
+           </td>
+
+
+        </tr> -->
+        @for (emp of employees ; track emp;){
+            <tr >
+           <td class="border">
+             {{emp.empName}}
+            
+           </td>
+            <td class="border">
+            {{emp.empNumber}}
+           </td>
+          <td class="border" >
+             {{emp.empEmail}}
+           </td>
+               <td class="border">
+             {{emp.empDept}}
+           </td>
+
+
+        </tr>
+        }
+    </tbody>
+    </table>
+</div>
+
+<!-- using *ngFor -->
+
+    <div class="h-auto bg-green-200 w-full flex justify-center py-10">
+       <div>
+        <ol >
+            <li *ngFor="let company of companies">{{company}}</li>
+        </ol>
+       </div>
+    </div>
+
+    <!-- using @for -->
+
+     <div class="h-auto bg-green-200 w-full flex justify-center py-10">
+       <div>
+        <ol >
+            <!-- <li *ngFor="let company of companies">{{company}}</li> -->
+             @for(company of companies; track company){
+                <li>{{company}}</li> 
+             }
+        </ol>
+       </div>
+    </div>
+
+    <!-- using  *ngfor -->
+    <div class="h-auto bg-green-300 w-full flex justify-center py-10">
+       <div>
+        <div >
+            <div  *ngFor="let company of companies">{{company}}</div>
+        </div>
+       </div>
+    </div>
+
+    <!-- using @for -->
+      <div class="h-auto bg-green-300 w-full flex justify-center py-10">
+       <div>
+        <!-- <div >
+            <div  *ngFor="let company of companies">{{company}}</div>
+        </div> -->
+        @for(company of companies; track company){
+             <div>{{company}}</div>
+        }
+       </div>
+    </div>
+
+
+<!-- using *ngFor -->
+     <div class="h-auto bg-green-400 w-full flex justify-center py-10">
+       <div>
+       <button class="button h-12 px-4 rounded-xl mx-4 text-white bg-red-500"  *ngFor="let company of companies">
+{{company}}
+       </button>
+       </div>
+    </div>
+
+    <!-- using @for -->
+
+    <div class="h-auto bg-green-400 w-full flex justify-center py-10">
+       <div>
+       <!-- <button class="button h-12 px-4 rounded-xl mx-4 text-white bg-red-500"  *ngFor="let company of companies">
+    {{company}}
+       </button> -->
+       @for(company of companies; track company){
+        <button class="button h-12 px-4 rounded-xl mx-4 text-white bg-red-500" >
+    {{company}}
+       </button>
+       }
+       </div>
+    </div>
+
+
+

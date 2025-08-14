@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { DirectivesComponent } from './directives/directives.component';
 import { ControlFlowComponent } from './control-flow/control-flow.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ControlFlowComponent],
+  imports: [RouterOutlet, NgSwitchComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
