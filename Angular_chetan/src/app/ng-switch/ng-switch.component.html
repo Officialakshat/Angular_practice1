@@ -1,15 +1,42 @@
 <!-- using *ngSwitch -->
 <div class="bg-pink-100 py-10 ">
   <div class="py-2  flex justify-center space-x-4">
-    <button (click)="set(1)" class="h-12 px-4 text-white py-2 rounded-xl border bg-green-400 border-black">Grade 1</button>
-    <button (click)="set(2)" class="h-12 px-4 text-white py-2 rounded-xl border  bg-blue-400 border-black">Grade 2</button>
+    <button (click)="set(1)" class=" h-12 px-4 text-white py-2 rounded-xl border bg-green-400 border-black">Grade A</button>
+    <button (click)="set(2)" class="h-12 px-4 text-white py-2 rounded-xl border  bg-blue-400 border-black">Grade B</button>
 
-    <button  (click)="set(3)" class="h-12 px-4 text-white py-2 rounded-xl border bg-red-400 border-black">Grade 3</button>
+    <button  (click)="set(3)" class="h-12 px-4 text-white py-2 rounded-xl border bg-red-400 border-black">Grade c</button>
   </div>
-  <div [ngSwitch]="grade">
+  <div [ngSwitch]="grade" class=" flex justify-center">
    <p *ngSwitchCase="1">Outstanding Performance, Congrats</p>
    <p *ngSwitchCase="2">Best Performance, Congrats</p>
    <p *ngSwitchCase="3">Good Performance, Congrats</p>
+    <p *ngSwitchDefault="3">Choose Your Grade</p>
+  </div>
+</div>
+
+<div class="bg-pink-100 py-10 border-t">
+  <div class="py-2  flex justify-center space-x-4">
+    <button (click)="set(1)" class=" h-12 px-4 text-white py-2 rounded-xl border bg-green-400 border-black">Grade A</button>
+    <button (click)="set(2)" class="h-12 px-4 text-white py-2 rounded-xl border  bg-blue-400 border-black">Grade B</button>
+
+    <button  (click)="set(3)" class="h-12 px-4 text-white py-2 rounded-xl border bg-red-400 border-black">Grade c</button>
+  </div>
+  <div [ngSwitch]="grade" class=" flex justify-center">
+   <!-- <p *ngSwitchCase="1">Outstanding Performance, Congrats</p>
+   <p *ngSwitchCase="2">Best Performance, Congrats</p>
+   <p *ngSwitchCase="3">Good Performance, Congrats</p>
+    <p *ngSwitchDefault="3">Choose Your Grade</p> -->
+  @switch(grade){
+    @case(1){
+       <p>Outstanding Performance, Congrats</p>
+    }@case(2){
+       <p>Best Performance, Congrats</p>
+    }@case(3){
+       <p>Good Performance, Congrats</p>
+    }@default(){
+    <p>Choose Your Grade</p>
+    }
+  }
   </div>
 </div>
 
