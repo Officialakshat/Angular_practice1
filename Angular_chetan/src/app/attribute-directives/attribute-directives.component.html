@@ -1,4 +1,77 @@
- <div [ngClass]="parentDiv" class="h-96 w-full border  flex justify-between px-20 py-24">
-    <div  [ngClass]="Child1" class="h-44 w-44 border "></div>
-    <div  [ngClass]="Child2" class="h-44 w-44 border "></div>
- </div>
+<div
+  [ngClass]="parentDiv"
+  class="h-96 w-full border flex justify-between px-20 py-24"
+>
+  <div [ngClass]="Child1" class="h-44 w-44 border"></div>
+  <div [ngClass]="Child2" class="h-44 w-44 border"></div>
+</div>
+
+<div class="flex justify-center space-x-4 mt-10">
+  <button
+    (click)="changeToGreen()"
+    class="h-12 px-4 py-2 bg-green-400 border rounded-xl"
+  >
+    Chnage to Blue
+  </button>
+  <button
+    (click)="changeToYellow()"
+    class="h-12 px-4 py-2 bg-yellow-400 border rounded-xl"
+  >
+    Chnage to Yellow
+  </button>
+</div>
+
+<!-- second example -->
+
+<div
+  class="w-full border flex justify-center space-x-4 px-20 py-10 bg-purple-400"
+>
+  <div
+    [class]="div1"
+    class="h-12 w-24 border flex justify-center items-center rounded-md"
+  >
+    div1
+  </div>
+  <div
+    [class]="div2"
+    class="h-12 w-24 flex justify-center items-center border rounded-md"
+  >
+    div2
+  </div>
+</div>
+<div class="flex justify-center">
+  <button
+    (click)="changeColorDiv('bg-red-500')"
+    class="bg-purple-500 rounded-xl my-4 px-4 py-2 h-12"
+  >
+    change color
+  </button>
+</div>
+
+<!-- example -->
+
+<div
+  class="w-full border flex justify-center space-x-4 px-20 py-10 bg-purple-400"
+>
+  <div
+    [class]="div1"
+    class="h-12 w-24 border flex justify-center items-center rounded-md"
+  >
+    div1
+  </div>
+  <div
+    [class]="div2"
+    class="h-12 w-24 flex justify-center items-center border rounded-md"
+  >
+    div2
+  </div>
+</div>
+<div class="flex justify-center">
+  <button
+    (click)="changeColorDiv('bg-red-500')"
+    class="bg-purple-500 rounded-xl my-4 px-4 py-2 h-12"
+  >
+    change color
+  </button>
+</div>
+

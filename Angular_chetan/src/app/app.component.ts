@@ -8,7 +8,10 @@ import { AttributeDirectivesComponent } from './attribute-directives/attribute-d
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AttributeDirectivesComponent],
+  imports: [RouterOutlet, 
+    // AttributeDirectivesComponent
+    
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
