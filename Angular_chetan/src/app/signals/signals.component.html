@@ -1,1 +1,23 @@
-<p>signals works!</p>
+<div class="h-54 w-full bg-pink-100">
+  <p>the value of signal is : {{ count() }}</p>
+
+  <h3>
+    <button
+      (click)="updateValue()"
+      class="px-4 py-2 h-12 bg-red-500 rounded-xl m-4"
+    >
+      New Value
+    </button>
+  </h3>
+</div>
+
+<div>
+  <div>
+    <!-- <button (click)="increment()">Increment</button> -->
+    <p>{{count()}}</p>
+  </div>
+  <div>
+    <button>Decrement</button>
+        <p>{{count()}}</p>
+  </div>
+</div>

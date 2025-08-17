@@ -5,12 +5,13 @@ import { ControlFlowComponent } from './control-flow/control-flow.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
+import { SignalsComponent } from './signals/signals.component';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, 
     // AttributeDirectivesComponent
-    
+    // SignalsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
