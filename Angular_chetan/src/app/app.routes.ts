@@ -5,7 +5,7 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 
 export const routes: Routes = [
-    {path: '' , component: UserComponent},
+    // {path: '' , component: UserComponent},
     {path: 'user',  component: UserComponent},
     {path: 'controlFlow', component: ControlFlowComponent},
     {path: 'ng-for', component: NgForComponent},

@@ -6,10 +6,12 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
 import { SignalsComponent } from './signals/signals.component';
+import { BuildInPipesComponent } from './build-in-pipes/build-in-pipes.component';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, 
+    BuildInPipesComponent
     // AttributeDirectivesComponent
     // SignalsComponent
   ],
