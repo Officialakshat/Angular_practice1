@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserData } from  '../user-data'
 
 @Component({
   selector: 'app-template-form',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './template-form.component.css'
 })
 export class TemplateFormComponent {
-
+userObj : UserData = {}
 }
