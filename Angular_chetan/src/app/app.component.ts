@@ -7,13 +7,15 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
 import { SignalsComponent } from './signals/signals.component';
 import { BuildInPipesComponent } from './build-in-pipes/build-in-pipes.component';
+import { TemplateFormComponent } from './template-form/template-form.component';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, 
-    BuildInPipesComponent
+    // BuildInPipesComponent
     // AttributeDirectivesComponent
     // SignalsComponent
+     TemplateFormComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

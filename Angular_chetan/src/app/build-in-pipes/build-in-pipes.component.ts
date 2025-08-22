@@ -12,6 +12,27 @@ export class BuildInPipesComponent {
   title : string = "Build in Pipes in Angular - 19";
 
   // date example
-  date: any = Date()
+  date: any = Date();
+
+  // json pipe example
+
+  details : any = {
+    name : "Akshat",
+    age : 22,
+    isMarried : false
+
+  
+  }
+
+    // decimal pipe example
+    num : number = 3.0
+ 
+    // percent pipe example
+    marks : number = 0.75
+
+    // currency pipe example
+   balance : number = 82.23
+
+   
   
 }

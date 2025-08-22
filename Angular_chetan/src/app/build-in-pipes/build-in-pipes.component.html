@@ -1,42 +1,67 @@
 <div class="bg-slate-300 border-2 py-8 px-4 ">
 
-    <!-- Uppercase -->
+    <!-- Uppercase pipe example -->
     <div class="bg-red-100 py-4 flex justify-center">
         <h3>1. Topic : {{title | uppercase}}</h3>
     </div>
 
-    <!-- lowercase -->
+    <!-- lowercase  pipe example -->
      <div class="bg-red-200 py-4 flex justify-center">
         <h3>2. Topic : {{title | lowercase}}</h3>
     </div>
 
-    <!-- TitleCase -->
+    <!-- TitleCase pipe example -->
       <div class="bg-red-400 py-4 flex justify-center">
         <h3>3. Topic : {{title | titlecase}}</h3>
     </div>
 
-    <!-- Date -->
-      <div class="bg-red-500 py-4 flex justify-center">
+    <!-- Date pipe example-->
+      <div class="bg-red-500 py-4 flex justify-center ">
         <h3>4. Date : {{date | date: 'dd/mm/yyyy'}}</h3>
-    </div>
-    <!-- Date -->
-      <div class="bg-red-500 py-4 flex justify-center">
+
+   
         <h3>4. Date : {{date | date: 'short'}}</h3>
-    </div>
-    <!-- Date -->
-      <div class="bg-red-500 py-4 flex justify-center">
+   
+    
         <h3>4. Date : {{date |  date: 'medium'}}</h3>
-    </div>
-    <!-- Date -->
-      <div class="bg-red-500 py-4 flex justify-center">
+   
+    
         <h3>4. Date : {{date |  date: 'long'}}</h3>
-    </div>
-    <!-- Date -->
-    <div class="bg-red-500 py-4 flex justify-center">
+    
+
         <h3>4. Date : {{date |  date: 'fulldate'}}</h3>
     </div>
 
-    <!-- json pipe -->
+    <!-- json pipe example-->
 
-    
+    <div class="bg-red-600 py-4 flex justify-center">
+        <pre><h3>5. Json Pipes example  : {{details |  json}}</h3></pre>
+    </div>
+
+    <!-- decimal pipe example -->
+
+    <div class="bg-red-700 py-4 flex justify-center">
+        <h3>6. Decimal Pipes example  : {{num | number:'2.2'}}</h3>
+    </div>
+
+      <!--percentage  pipe example -->
+
+    <div class="bg-red-800 py-4 flex justify-center">
+        <h3>7. Percentage Pipes Example  : {{marks | percent}}</h3>
+    </div>
+
+    <!--currency  pipe example -->
+
+    <div class="bg-red-900 py-4 flex justify-center">
+        <h3>8. Currency Pipes Example  : {{ balance| currency}}</h3>
+        <h3 class="bg-red-500 px-4 py-2">8. Currency Pipes Example  : {{ balance| currency :'INR'}}</h3>
+    </div>
+
+    <!--slice pipe example  -->
+   <div class="bg-red-900 py-4 flex justify-center">
+        <h3>9. SLice Pipes Example  : {{ title| slice: -10 }}</h3>
+      
+    </div>
+
+
 </div>
