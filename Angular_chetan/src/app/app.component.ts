@@ -8,6 +8,7 @@ import { AttributeDirectivesComponent } from './attribute-directives/attribute-d
 import { SignalsComponent } from './signals/signals.component';
 import { BuildInPipesComponent } from './build-in-pipes/build-in-pipes.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { TemplateFormComponent } from './template-form/template-form.component';
     // BuildInPipesComponent
     // AttributeDirectivesComponent
     // SignalsComponent
-     TemplateFormComponent
+    //  TemplateFormComponent
+    ReactiveFormComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

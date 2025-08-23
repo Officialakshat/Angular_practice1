@@ -1,12 +1,22 @@
 import { Component } from '@angular/core';
-import { UserData } from  '../user-data'
+import { FormsModule, NgForm } from '@angular/forms';
+import { UserData } from '../user-data';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-template-form',
-  imports: [],
+  standalone: true,          
+  imports: [FormsModule,
+     JsonPipe
+    ] ,  
   templateUrl: './template-form.component.html',
-  styleUrl: './template-form.component.css'
+  
 })
 export class TemplateFormComponent {
-userObj : UserData = {}
+  userObj: UserData = {};
+
+  onSubmit(userForm: NgForm) {
+    console.log(userForm.value);
+    console.log(this.userObj);
+  }
 }
