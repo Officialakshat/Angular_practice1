@@ -1,10 +1,11 @@
 import { CommonModule, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { SharedDataService } from '../shared-data.service';
 
 @Component({
   selector: 'app-control-flow',
-  imports: [NgIf, FormsModule],
+  imports: [NgIf, FormsModule, SharedDataService ],
   templateUrl: './control-flow.component.html',
   styleUrl: './control-flow.component.css'
 })
@@ -27,6 +28,9 @@ export class ControlFlowComponent {
     this.isDivShow = false;
   }
 
+
+  constructor(){
+  }
 
   // thrid Example
 
