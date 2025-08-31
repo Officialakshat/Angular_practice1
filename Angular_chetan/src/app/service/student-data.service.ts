@@ -4,12 +4,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class StudentDataService {
-
-  constructor() { }
-  userData = [{
+  userData = {
     name: "Akshat",
     rollNO: 2326289,
     branch: "B.tech CSE",
     isPass: true,
-  }]
+  }
+  constructor() { }
+
 }

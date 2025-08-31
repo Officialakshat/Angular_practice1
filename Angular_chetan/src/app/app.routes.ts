@@ -8,6 +8,7 @@ import { SignalsComponent } from './signals/signals.component';
 import { BuildInPipesComponent } from './build-in-pipes/build-in-pipes.component';
 import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { StudentDataComponent } from './student-data/student-data.component';
 
 export const routes: Routes = [
     // {path: '' , component: UserComponent},
@@ -18,5 +19,7 @@ export const routes: Routes = [
     {path: 'pipes', component: BuildInPipesComponent},
     {path: 'attribute', component: AttributeDirectivesComponent},
     {path: 'structural', component: DirectivesComponent},
+    {path: 'std_data', component: StudentDataComponent},
+
 
 ];

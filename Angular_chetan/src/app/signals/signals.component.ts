@@ -1,4 +1,4 @@
-import { Component, effect, signal } from '@angular/core';
+import { Component, computed, effect, signal } from '@angular/core';
 
 @Component({
   selector: 'app-signals',
@@ -7,8 +7,8 @@ import { Component, effect, signal } from '@angular/core';
   styleUrl: './signals.component.css'
 })
 export class SignalsComponent {
-  count = signal(5)
-
+  
+count = signal(5)
   
 
 
@@ -21,6 +21,13 @@ export class SignalsComponent {
   updateValue(){
     this.count.set(this.count()+1)
   }
+
+   // base signals
+  pricePerItem = signal(50);
+
+  
+  // computed signal
+  totalPrice = computed(() => this.count() * this.pricePerItem());
 
 
 }
