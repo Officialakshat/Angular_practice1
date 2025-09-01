@@ -14,10 +14,13 @@ export class StudentDataComponent {
 //     branch: "B.tech CSE",
 //     isPass: true,
 //   }
-dummyData : any ;
 
-constructor(private stud_data:StudentDataService ){
-   this.dummyData = this.stud_data.userData;
+dummyData : any;
+isEligible : boolean;
 
+constructor(private akshatData:StudentDataService){
+this.dummyData = this.akshatData.userData
+
+this.isEligible = this.akshatData.isEligibleForSubscription()
 }
 }

@@ -1,6 +1,11 @@
 <Div class="flex justify-center items-center flex-col space-y-5 mt-10">
     <div class="bg-green-600 py-4 px-8 ">
         <h1>Student Data</h1>
+        @if(isEligible){
+          <h4 class="text-blue-600 font-semibold">You are eligible for primium subscription</h4>
+        }@else{
+          <h4 class="text-red-600 font-semibold">You are not eligible for primium subscription</h4>
+        }
     </div>
     <div class="bg-red-600 py-4 px-8 ">
       <h1>{{dummyData.name}}</h1>
