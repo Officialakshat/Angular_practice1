@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './crud.component.css'
 })
 export class CRUDComponent {
+  API_data = 'https://dummy-json.mock.beeceptor.com/posts'
+
 
 }
