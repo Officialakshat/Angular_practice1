@@ -13,10 +13,10 @@ import { JsonPipe } from '@angular/common';
   
 })
 export class TemplateFormComponent {
-  userObj: UserData = {};
+  // userObj: UserData = {};
 
   onSubmit(userForm: NgForm) {
     console.log(userForm.value);
-    console.log(this.userObj);
+    // console.log(this.userObj);
   }
 }

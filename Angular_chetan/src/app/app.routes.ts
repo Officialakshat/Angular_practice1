@@ -9,17 +9,21 @@ import { BuildInPipesComponent } from './build-in-pipes/build-in-pipes.component
 import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { StudentDataComponent } from './student-data/student-data.component';
+import { CRUDComponent } from './crud/crud.component';
 
 export const routes: Routes = [
-    // {path: '' , component: UserComponent},
+    {path: '' , component: UserComponent},
     {path: 'user',  component: UserComponent},
     {path: 'controlFlow', component: ControlFlowComponent},
+    {path: 'crud', component: CRUDComponent},
     {path: 'data-binding', component: DataBindingComponent},
     {path: 'signal', component: SignalsComponent},
     {path: 'pipes', component: BuildInPipesComponent},
     {path: 'attribute', component: AttributeDirectivesComponent},
     {path: 'structural', component: DirectivesComponent},
     {path: 'std_data', component: StudentDataComponent},
+    
+
 
 
 ];
