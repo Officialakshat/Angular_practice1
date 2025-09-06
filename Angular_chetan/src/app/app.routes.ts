@@ -12,7 +12,7 @@ import { StudentDataComponent } from './student-data/student-data.component';
 import { CRUDComponent } from './crud/crud.component';
 
 export const routes: Routes = [
-    {path: '' , component: UserComponent},
+    // {path: '' , redirectTo:'crud', pathMatch: 'full'},
     {path: 'user',  component: UserComponent},
     {path: 'controlFlow', component: ControlFlowComponent},
     {path: 'crud', component: CRUDComponent},
