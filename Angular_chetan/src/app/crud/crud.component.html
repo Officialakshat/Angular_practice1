@@ -1,1 +1,37 @@
-<h1>svsuivs</h1>
+<!-- crud.component.html -->
+<div class="p-4 mx-10">
+  <h2 class="text-xl font-bold mb-4">Users List</h2>
+
+  <table class="min-w-full border border-gray-300 rounded-lg overflow-hidden px-10">
+    <thead class="bg-gray-200">
+      <tr class="bg-green-600">
+        <th class="border px-4 py-2">ID</th>
+        <th class="border px-4 py-2">Name</th>
+        <th class="border px-4 py-2">Username</th>
+        <th class="border px-4 py-2">Email</th>
+        <th class="border px-4 py-2">Update</th>
+        <th class="border px-4 py-2">View</th>
+        <th class="border px-4 py-2">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of apiData" class=" bg-red-300  mt-2 text-center">
+        <td class="border px-4 py-2">{{ data.id }}</td>
+        <td class="border px-4 py-2">{{ data.name }}</td>
+        <td class="border px-4 py-2">{{ data.username }}</td>
+        <td class="border px-4 py-2">{{ data.Email }}</td>
+        <td class="border py-2 "><button class="bg-amber-300 rounded-xl cursor-pointer px-8 py-2">Update</button></td>
+        <td class="border py-2 "><button class="bg-amber-300 rounded-xl cursor-pointer px-8 py-2">View</button></td>
+        <td class="border py-2 "><button class="bg-red-500 rounded-xl cursor-pointer text-white  px-8 py-2">Delete</button></td>
+
+
+
+      </tr>
+    </tbody>
+  </table>
+
+  
+  <div class="flex justify-center"> 
+    <button class="px-4 py-2 bg-green-600 mt-10 rounded-xl cursor-pointer" (click)="onAddUser() ">Add New User</button>
+  </div>
+</div>

@@ -1,22 +1,46 @@
 {
-    "user": [
-      {
-        "id": 1,
-        "name" : "Akshat",
-        "username": "Akshat",
-        "Email": "Akshat@gmail.com"
-      },
-      {
-        "id": 2,
-        "name" : "Amit",
-        "username": "Amit",
-        "Email": "Amit@gmail.com"
-      },
-      {
-        "id": 3,
-        "name" : "Chetan",
-        "username": "Chetan",
-        "Email": "Chetan@gmail.com"
-      }
-    ]
+  "user": [
+    {
+      "id": 1,
+      "name": "Akshat",
+      "username": "Akshat",
+      "Email": "Akshat@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Amit",
+      "username": "Amit",
+      "Email": "Amit@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Chetan",
+      "username": "Chetan",
+      "Email": "Chetan@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Ram",
+      "username": "Ram",
+      "Email": "Ram@gmail.com"
+    },
+    {
+      "name": "manu",
+      "username": "manu",
+      "email": "manu@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "manu",
+      "username": "manu",
+      "Email": "",
+      "id": 6
+    },
+    {
+      "name": "manu",
+      "username": "manu",
+      "Email": "manu@gmail.com",
+      "id": 7
+    }
+  ]
 }

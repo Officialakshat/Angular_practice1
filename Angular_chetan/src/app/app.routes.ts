@@ -10,18 +10,25 @@ import { AttributeDirectivesComponent } from './attribute-directives/attribute-d
 import { DirectivesComponent } from './directives/directives.component';
 import { StudentDataComponent } from './student-data/student-data.component';
 import { CRUDComponent } from './crud/crud.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AddUserComponent } from './add-user/add-user.component';
 
 export const routes: Routes = [
     // {path: '' , redirectTo:'crud', pathMatch: 'full'},
-    {path: 'user',  component: UserComponent},
-    {path: 'controlFlow', component: ControlFlowComponent},
+    // {path: 'user',  component: UserComponent},
+    // {path: 'controlFlow', component: ControlFlowComponent},
     {path: 'crud', component: CRUDComponent},
-    {path: 'data-binding', component: DataBindingComponent},
+    // {path: 'data-binding', component: DataBindingComponent},
     {path: 'signal', component: SignalsComponent},
-    {path: 'pipes', component: BuildInPipesComponent},
-    {path: 'attribute', component: AttributeDirectivesComponent},
-    {path: 'structural', component: DirectivesComponent},
-    {path: 'std_data', component: StudentDataComponent},
+    // {path: 'pipes', component: BuildInPipesComponent},
+    // {path: 'attribute', component: AttributeDirectivesComponent},
+    // {path: 'structural', component: DirectivesComponent},
+    // {path: 'std_data', component: StudentDataComponent},
+    {path: 'addUser', component: AddUserComponent},
+    { path: '**', component: PageNotFoundComponent },
+    
+
+
     
 
 

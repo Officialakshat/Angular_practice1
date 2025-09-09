@@ -14,4 +14,7 @@ export class CrudServiceService {
     return this.http.get<UserData[]>(this.baseUrl);
   }
  
+  post(data : UserData){
+    return this.http.post(this.baseUrl,data)
+  }
 }
