@@ -12,6 +12,7 @@ import { StudentDataComponent } from './student-data/student-data.component';
 import { CRUDComponent } from './crud/crud.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AddUserComponent } from './add-user/add-user.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 export const routes: Routes = [
     // {path: '' , redirectTo:'crud', pathMatch: 'full'},
@@ -25,6 +26,7 @@ export const routes: Routes = [
     // {path: 'structural', component: DirectivesComponent},
     // {path: 'std_data', component: StudentDataComponent},
     {path: 'addUser', component: AddUserComponent},
+     {path: 'updateUser/:id', component: UpdateUserComponent},
     { path: '**', component: PageNotFoundComponent },
     
 

@@ -20,7 +20,7 @@
         <td class="border px-4 py-2">{{ data.name }}</td>
         <td class="border px-4 py-2">{{ data.username }}</td>
         <td class="border px-4 py-2">{{ data.Email }}</td>
-        <td class="border py-2 "><button class="bg-amber-300 rounded-xl cursor-pointer px-8 py-2">Update</button></td>
+        <td class="border py-2 "><button class="bg-amber-300 rounded-xl cursor-pointer px-8 py-2 " (click)="onUpdate(data.id)">Update</button></td>
         <td class="border py-2 "><button class="bg-amber-300 rounded-xl cursor-pointer px-8 py-2">View</button></td>
         <td class="border py-2 "><button class="bg-red-500 rounded-xl cursor-pointer text-white  px-8 py-2">Delete</button></td>
 

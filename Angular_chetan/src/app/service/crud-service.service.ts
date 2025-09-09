@@ -17,4 +17,8 @@ export class CrudServiceService {
   post(data : UserData){
     return this.http.post(this.baseUrl,data)
   }
+
+  getDataById(id: number){
+   return this.http.get<UserData>(`${this.baseUrl}/ ${id}`)
+  }
 }
